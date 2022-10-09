@@ -1,0 +1,46 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+h1{
+    text-align: center;
+    font-size:xx-large;
+
+}
+input[type=text],input[type=password]{
+    padding: 10px;
+    margin: 5px 0 22px,0;
+    margin-bottom: 2rem;
+}
+
+.submits{
+    padding: 16px 20px;
+    margin: 5px,0;
+}
+.login1{
+
+    padding: 10px 10px;
+
+}
+.login2{
+    padding: 10px 10px;
+
+}
+.loginimage{
+    background-color: antiquewhite;
+}
+.noteimages{
+    background-color:lightcoral;
+}
+.signupimages{
+    background-color:lightsalmon
+}
+
+.imagecat{
+    width: 250px;
+    margin-right: auto;
+    margin-right: auto;
+}
+
+
