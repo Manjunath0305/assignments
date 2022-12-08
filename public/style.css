@@ -27,8 +27,7 @@ input[type=text],input[type=password]{
     padding: 10px 10px;
 
 }
-.loginimage{
-    background-color: antiquewhite;
+.loginimage{    background-color: antiquewhite;
 }
 .noteimages{
     background-color:lightcoral;
