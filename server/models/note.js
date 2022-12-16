@@ -6,7 +6,7 @@ await con.query(`CREATE DATABASE IF NOT EXISTS ${process.env.MYSQL_DB}`);
 await con.query(`USE ${process.env.MYSQL_DB}`) ;
 let sql=`CREATE TABLE IF NOT EXISTS notes (
   noteID INT NOT NULL AUTO_INCREMENT,
-  emailid VARCHAR(255) NOT NULL,
+  userID INT NOT NULL,
   notes VARCHAR(255) NOT NULL,
   CONSTRAINT notePK PRIMARY KEY(noteID)
 ); `
@@ -16,8 +16,8 @@ createTable();
 
 async function create(note) {
 
-const sql = `INSERT INTO notes (emailid, notes)
-  VALUES ("${note.emailid}","${note.notes}");
+const sql = `INSERT INTO notes (userID, notes)
+  VALUES ("${note.userID}","${note.notes}");
 `
 
 await con.query(sql);
